@@ -59,8 +59,7 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : Image.network(
-                  'https://www.thisiscolossal.com/wp-content/uploads/2023/04/Letelier-3.jpg'),
+              : Image.asset('images/3.jpg'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
