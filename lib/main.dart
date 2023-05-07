@@ -13,9 +13,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Learn The Basics',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('App Title'),
+          title: const Text('App Title'),
         ),
-        body: Text('Hello World!'),
+        body: const Text('Hello World!'),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
+            BottomNavigationBarItem(
+                label: 'Settings', icon: Icon(Icons.settings))
+          ],
+        ),
       ),
       debugShowCheckedModeBanner: false,
     );
