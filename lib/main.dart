@@ -24,13 +24,27 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Sveneria'),
         ),
         body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              setState(() {
-                buttonName = 'Clicked';
-              });
-            },
-            child: Text(buttonName),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    buttonName = 'Clicked';
+                  });
+                },
+                child: Text(buttonName),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    buttonName = 'Clicked';
+                  });
+                },
+                child: Text(buttonName),
+              )
+            ],
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
