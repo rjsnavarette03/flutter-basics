@@ -1,4 +1,4 @@
-# flutter_learn_the_basics
+# Flutter Learn The Basics
 
 A new Flutter project.
 
