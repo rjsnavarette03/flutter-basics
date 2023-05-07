@@ -21,7 +21,10 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Learn The Basics',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Sveneria'),
+          title: const Center(
+            child: Text('Sveneria'),
+          ),
+          backgroundColor: Colors.black54,
         ),
         body: Center(
           child: currentIndex == 0
@@ -56,7 +59,8 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : const SizedBox(),
+              : Image.network(
+                  'https://www.thisiscolossal.com/wp-content/uploads/2023/04/Letelier-3.jpg'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
