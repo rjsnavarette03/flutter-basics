@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
           title: Text('App Title'),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
