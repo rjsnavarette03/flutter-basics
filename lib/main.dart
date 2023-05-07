@@ -4,8 +4,15 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  String buttonName = 'Click';
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +25,11 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              print('Print Something!');
+              setState(() {
+                buttonName = 'Clicked';
+              });
             },
-            child: const Text('Click here'),
+            child: Text(buttonName),
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
