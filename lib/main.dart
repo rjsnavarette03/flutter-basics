@@ -13,9 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Learn The Basics',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('App Title'),
+          title: const Text('Sveneria'),
         ),
-        body: const Text('Hello World!'),
+        body: const Center(
+          child: Text('Hello World!'),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(
